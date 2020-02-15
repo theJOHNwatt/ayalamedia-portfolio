@@ -31,6 +31,12 @@
             margin: 0 20px;
             padding: 5px;
         }
+
+        a:hover {
+            border-bottom: 3px solid rgba(172, 0, 0, 0.9);
+            margin-top: 3px;
+            transition: .2s;
+        }
         
         a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
