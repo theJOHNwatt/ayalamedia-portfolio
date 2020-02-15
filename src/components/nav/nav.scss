@@ -1,18 +1,28 @@
 
 
 .nav-bar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.9);
+
     nav {
         display: flex;
-        background-color: rgba(12, 12, 12, 0.9);
+        width: 50%;
         padding: 5px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         padding: 10px;
+        margin: 0 auto;
 
         .logo {
             border: 2px solid white;
             border-radius: 100%;
             padding: 5px;
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+            transition: .5s;
         }
 
         img {
@@ -28,18 +38,26 @@
             color: white;
             font-size: .9rem;
             font-weight: bold;
-            margin: 0 20px;
+            // margin: 0 20px;
             padding: 5px;
+            
+            
         }
 
         a:hover {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 3px;
             transition: .2s;
-        }
-        
+            
+            }
+
         a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
+            margin-top: 3px;
+        }
+            
+        .home-link:hover, .home-link:focus {
+            border: 0px solid rgba(0, 0, 0, 0);
             margin-top: 3px;
         }
     }

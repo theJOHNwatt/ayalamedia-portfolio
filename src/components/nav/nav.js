@@ -10,7 +10,7 @@ function Nav({selected}) {
     return (
         <div className='nav-bar'>
             <nav>
-                <div className='logo'><img src={logo} alt='Ayala Media Logo'/></div>
+                <div className='logo'><img src={logo} to='https://www.google.com' alt='Ayala Media Logo'/></div>
                     <a href='#home'>HOME</a>
                     <a href='#about'>ABOUT</a>
                     <a href='#film'>FILM</a>
