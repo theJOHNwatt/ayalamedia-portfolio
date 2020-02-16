@@ -22,7 +22,7 @@ function Home () {
           top: 0,
           left: 0,
           width: "100%",
-          height: '100%',
+          height: '105%',
         }}
         src={`https://www.youtube.com/embed/qbFIrnYy3P0?rel=0&autoplay=1&mute=1&controls=0&loop=1
         &playlist=qbFIrnYy3P0`}

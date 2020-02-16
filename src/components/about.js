@@ -11,12 +11,13 @@ function About() {
     return (
         <div>
             <div className='socials-contents'>
+                <div className='socials-header'>
                     <h1>SOCIAL MEDIA</h1>
+                </div>
                     <div className='social-icons'>
-                        <img src={youtube} alt='Youtube'/>
-                        <img src={facebook} alt='Facebook'/>
-                        <img src={instagram} alt='Instagram'/>
-                        <img src={twitter} alt='Twitter'/>
+                        <a href='https://www.youtube.com/user/boomshakalaka33' target="_blank"><img src={youtube} alt='Youtube' /></a>
+                        <a href='https://www.facebook.com/gavenayala/' target="_blank"><img src={facebook} alt='Facebook'/></a>
+                        <a href='https://www.instagram.com/ayalamedia/' target="_blank"><img src={instagram} alt='Instagram'/></a>
                     </div>
                     <h2>Stay up to date on conntent by following us on social media!</h2>
                 </div>
