@@ -5,6 +5,7 @@
     width: 100%;
     background-color: rgba(12, 12, 12, 0.9);
     z-index: 2;
+    margin-top: 100px;
 
     nav {
         display: flex;
@@ -51,9 +52,14 @@
             transition: .2s;
             }
 
-        a:focus {
+        .selected, a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 3px;
         }
     }
+
+    nav.scroll {
+        background-color: #A1572F;
+        color: #eef;
+      }
 }
