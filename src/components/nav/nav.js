@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link}  from 'react-router-dom'
+
 import './nav.scss'
 
 import logo from '../../assests/ayalamedia-logo.png'
@@ -14,12 +14,12 @@ function Nav({selected}) {
         <div className='nav-bar' >
             <nav id='navbar'>
                 <div className='logo'><img src={logo} to='https://www.google.com' alt='Ayala Media Logo'/></div>
-                    <Link activeClass='selected' to='/#home'>HOME</Link>
-                    <Link activeClass='selected' to='#about'>ABOUT</Link>
-                    <Link activeClass='selected' to='#film'>FILM</Link>
-                    <Link activeClass='selected' to='#portfolio'>PORTFOLIO</Link>
-                    <Link activeClass='selected' to='#motofin'><img className='motofin' src={motofin} alt='MotoFinCo Logo'/></Link>
-                    <Link activeClass='selected' to='/#contact'>CONTACT</Link>
+                    <a href='#home'>HOME</a>
+                    <a href='#about'>ABOUT</a>
+                    <a href='#film'>FILM</a>
+                    <a href='#portfolio'>PORTFOLIO</a>
+                    <a href='#motofin'><img className='motofin' src={motofin} alt='MotoFinCo Logo'/></a>
+                    <a href='#contact'>CONTACT</a>
 
                     
             </nav>

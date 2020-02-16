@@ -52,14 +52,9 @@
             transition: .2s;
             }
 
-        .selected, a:focus {
+        a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 3px;
         }
     }
-
-    nav.scroll {
-        background-color: #A1572F;
-        color: #eef;
-      }
 }

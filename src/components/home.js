@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import down from '../assests/down-icon.png'
 
 function Home () {
 
@@ -31,6 +30,7 @@ function Home () {
         allow='autoplay, muted'
       />
     </div>
+    <a href='#about' ><div className='scroll'>EXPLORE<img src={down} alt='Scroll Down'/></div></a>
         </div>
     )
 }
