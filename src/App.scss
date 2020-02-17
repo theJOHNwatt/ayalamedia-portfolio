@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	
+	
 }
 ol, ul {
 	list-style: none;
@@ -152,24 +153,23 @@ a {
 
 .film-image {
 		background-image: url('./assests/motoimage1.jpg');
-		height: 500px;
+		height: 700px;
 		background-attachment: fixed;
   		background-position: center;
   		background-repeat: no-repeat;
-		  background-size: cover;
-		  z-index: 1;
+		background-size: cover;
+		z-index: 1;
 
 		  .film-header {
 			  text-align: center;	
-			  height: 600px;
-			  padding: 200px;
+			  padding: 250px;
 		  h1 {
 			color: white;
 			font-size: 5rem;
 			font-weight: bold;
 			border: 4px solid rgb(172, 0, 0);
 			margin: 0 auto;
-			width: 15%;
+			width: 200px;
 		}
 	}
 	}
@@ -201,4 +201,41 @@ a {
 
 	}
 
+}
+
+//Photography styles 
+
+.portfolio-image {
+	background-image: url('./assests/motoimage2.jpg');
+	height: 700px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+
+	.portfolio-header {
+		text-align: center;	
+		padding: 250px;
+		h1 {
+		  color: white;
+		  font-size: 5rem;
+		  font-weight: bold;
+		  border: 4px solid rgb(172, 0, 0);
+		  margin: 0 auto;
+		  width: 640px;
+  		}
+	}
+}
+
+.portfolio-contents {
+	z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(46, 46, 46);
+		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		padding: 50px 300px;
+		line-height: 1.6;
+		height: 300px;
+		
 }

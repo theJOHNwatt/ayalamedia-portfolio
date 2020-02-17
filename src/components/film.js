@@ -20,13 +20,13 @@ function Film() {
                 <div className='videos-container'>
                     <AliceCarousel>
                       
-                        <iframe className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
+                        <iframe title='vid1' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
                        
-                        <iframe className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc" />
+                        <iframe title='vid2' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc" />
                        
-                        <iframe className="vid" width="100%" height="550" src="https://www.youtube.com/embed/FDRNNt6cgqg" />
+                        <iframe title='vid3' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/FDRNNt6cgqg" />
                        
-                        <iframe className="vid" width="100%" height="550" src="https://www.youtube.com/embed/qbFIrnYy3P0" />
+                        <iframe title='vid4' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/qbFIrnYy3P0" />
                        
                     </AliceCarousel>
                 </div>

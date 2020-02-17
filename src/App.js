@@ -13,12 +13,12 @@ import Nav from './components/nav/nav'
 
 function App({selected}) {
   return (
-    <div className="App">
+    <div  className="App">
       <Nav />
       <Route path='/' redirectTo='#home' render={_ => <Home selected={selected} />} />
       <Route path='/' redirectTo='#about' render={_ => <About selected={selected} />} />
       <Route path='/' redirectTo='#film' render={_ => <Film selected={selected} />} />
-      <Route path='/' redirectTo='#portfolio' render={_ => <Portfolio selected={selected} />} />
+      <Route path='/' redirectTo='#photography' render={_ => <Portfolio selected={selected} />} />
       <Route path='/' redirectTo='#motofin' render={_ => <Motofin selected={selected} />} />
       <Route path='/' redirectTo='#contact' render={_ => <Contact selected={selected} />} />
     </div>
