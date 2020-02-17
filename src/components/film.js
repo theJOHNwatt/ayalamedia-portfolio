@@ -15,7 +15,7 @@ function Film() {
                     <h1>FILM</h1>
                 </div>
                 <p>
-                    Ayala Media sets the bar for the highest quality in video production and editing. Checkout out our <a href='https://www.youtube.com/user/boomshakalaka33'>YouTube</a> page for more content.
+                    Ayala Media sets the bar for the highest quality in video production and editing. Checkout our <a href='https://www.youtube.com/user/boomshakalaka33'>YouTube</a> page for more content.
                 </p>
                 <div className='videos-container'>
                 <iframe width="30%" height="300" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
