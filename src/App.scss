@@ -93,7 +93,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	background-color: rgb(165, 30, 30);
+	background-color: rgb(102, 102, 102);
 	z-index: 3;
 	position: relative;
 	top: -115px;
@@ -105,6 +105,7 @@ a {
 	h1 {
 		font-size: 1.5rem;
 		font-weight: bold;
+		border-bottom: 4px solid rgba(172, 0, 0, 0.9);
 	}
 	h2 {
 		font-weight: 500;
@@ -114,7 +115,7 @@ a {
 		width: 100px;
 		margin: 20px 20px;
 		border-radius: 100%;
-		box-shadow: 0px 0px 18px 1px rgb(117, 21, 21);
+		box-shadow: 0px 0px 18px 1px rgb(34, 34, 34);
 	}
 }
 
@@ -132,7 +133,7 @@ a {
 		line-height: 1.6;
 	
 		.heading {
-			border-bottom: 4px solid rgba(172, 0, 0, 0.9);
+			border-bottom: 4px solid rgb(172, 0, 0);
 			width: 90px;
 			margin-bottom: 10px;
 		}
@@ -165,7 +166,7 @@ a {
 		z-index: 999;
 		position: relative;
 		color:white;
-		background-color: rgb(165, 30, 30);
+		background-color: rgb(102, 102, 102);
 		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
 		padding: 50px 300px;
 		line-height: 1.6;
@@ -178,11 +179,17 @@ a {
 		h1 {
 			font-size: 1.7rem;
 			font-weight: bold;
+			border-bottom: 4px solid rgb(172, 0, 0);
+			width: 70px;
+			margin: 0 auto;
 			
 		}
 		p {
 			font-weight: 600;
 			text-align: center;
+		}
+		a {
+			color: rgb(172, 0, 0);
 		}
 
 		.videos-container {
@@ -191,7 +198,7 @@ a {
 			margin-top: 20px;
 
 			iframe {
-				box-shadow: 0px 0px 18px 1px rgb(117, 21, 21);
+				box-shadow: 0px 0px 18px 1px rgb(34, 34, 34);
 			}
 		}
 
