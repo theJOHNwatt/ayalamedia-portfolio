@@ -1,7 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Lightbox from 'react-image-lightbox'
+
+import image1 from '../assests/portfolio/image1.jpg'
+import image2 from '../assests/portfolio/image2.jpg'
+import image3 from '../assests/portfolio/image3.jpg'
+import image4 from '../assests/portfolio/image4.jpg'
+import image5 from '../assests/portfolio/image5.jpg'
+import image6 from '../assests/portfolio/image6.jpg'
+import image7 from '../assests/portfolio/image7.jpg'
+import image8 from '../assests/portfolio/image8.jpg'
+import image9 from '../assests/portfolio/image9.jpg'
+
 
 function Portfolio() {
 
+    const [lightbox, setLightbox] = useState({
+        imagePopup: '',
+        isOpen: false
+    })
+    
+    const {imagePopup, isOpen} = lightbox
 
     return (
 
@@ -11,11 +29,27 @@ function Portfolio() {
                 <h1>PHOTOGRAPHY</h1>
                 </div>
                 <div className='portfolio-contents'>
-                    <p>Bro ipsum dolor sit amet ollie beater first tracks twister gapers. Big ring bunny slope giblets 360. Bro reverse camber cruiser frozen chicken heads. Freshies frontside OTB chowder huckfest. Shreddin taco mitt rail bowl bail death cookies misty dirt chain ring rock-ectomy back country bomb gondy. Japan air backside schwag bowl death cookies.
+                    <p>Bro ipsum dolor sit amet ollie beater first tracks twister gapers. Big ring bunny slope giblets 360. Bro reverse camber cruiser frozen chicken heads. Freshies frontside OTB chowder huckfest. Shreddin taco mitt rail bowl bail death cookies misty dirt chain ring rock-ectomy back country bomb gondy. Japan air backside schwag bowl death cookies.</p>
+                    <div className='image-showcase'>
+                        {/* <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image1}`})} src={image1} alt='Showcase 1' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image2}`})} src={image2} alt='Showcase 2' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image3}`})} src={image3} alt='Showcase 3' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image4}`})} src={image4} alt='Showcase 4' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image5}`})} src={image5} alt='Showcase 5' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image6}`})} src={image6} alt='Showcase 6' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image7}`})} src={image7} alt='Showcase 7' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image8}`})} src={image8} alt='Showcase 8' />
+                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image9}`})} src={image9} alt='Showcase 9' />
 
-Moguls jib pillow popping pinner backside back country schwag clean air dirt rail skid lid. Apres air tele, gear jammer pow pow bunny slope sucker hole punter switch. Gapers dust on crust McTwist huck park, huck back country rigid newschooler 180 groomer. Park grind roadie spin bonk hardtail rail back country grunt. Back country lid method frontside chowder over the bars heli 180 derailleur ripping wack brain bucket core shot single track couloir.
-
-Stoked japan air bro face shots dust on crust road rash Whistler grab hellflip hardtail epic grind nose shuttle. Heli first tracks berm ollie. Ripper fully bowl pillow popping sucker hole shuttle. Steed sucker hole road rash rip, park avie dope stunt gondy brain bucket huck switch backside. Manny 360 ripper, taco mitt shuttle hero table top gnar gapers frozen chicken heads. Bomb hole back country brain bucket 360 couloir poaching glades phat.</p>
+                        {
+                            isOpen && (
+                                <Lightbox
+                                    mainSrc={imagePopup}
+                                    onCloseRequest={() => setLightbox({...lightbox, isOpen: false})}
+                                />
+                            )
+                        } */}
+                    </div>
                 </div>
             </div>
         </div>

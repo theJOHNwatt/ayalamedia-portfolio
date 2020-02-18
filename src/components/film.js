@@ -14,20 +14,20 @@ function Film() {
                 </div>
             </div>
             <div  className='film-contents'>
-                {/* <p>
+                <p>
                     Ayala Media sets the bar for the highest quality in video production and editing. Checkout our <a href='https://www.youtube.com/user/boomshakalaka33'>YouTube</a> page for more content.
-                </p> */}
+                </p>
                 <div className='videos-container'>
                     <Carousel interval={null} touch={true} fade={true} controls={true} wrap={true}>
                         
                     <Carousel.Item>
-                        <iframe title='vid2' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
+                        <iframe title='vid2' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo?controls=1" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <iframe title='vid2' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc" />
+                        <iframe title='vid2' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc?controls=1" />
                     </Carousel.Item>  
                     <Carousel.Item>
-                        <iframe title='vid3' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/FDRNNt6cgqg" />
+                        <iframe title='vid3' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/FDRNNt6cgqg?controls=1" />
                     </Carousel.Item>  
                     <Carousel.Item> 
                         <iframe title='vid4' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/qbFIrnYy3P0" />

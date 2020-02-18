@@ -55,6 +55,12 @@ table {
 	border-spacing: 0;
 }
 
+p{
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+}
+
 
 
 
@@ -67,7 +73,7 @@ table {
 
 .scroll {
 	position: relative;
-	top: 20px;
+	top: 30px;
 	padding: 30px 0;
 	z-index: 2;
 	.scroll-items {
@@ -93,12 +99,6 @@ a:hover {
 	}		
 }
 
-
-
-//social media styles
-
-
-
 //about me styles
 
 .about-image {
@@ -120,7 +120,7 @@ a:hover {
 		  margin: 0 auto;
 		  text-decoration: underline overline;
 		  text-decoration-color: rgb(172, 0, 0);
-		  
+		  text-shadow: 0px 0px 10px #000000d3;
   		}
 	}
 }
@@ -141,8 +141,28 @@ a:hover {
 			font-size: 1.5rem;
 			font-weight: bold;
 		}
-		p {
-			font-weight: 500;
+		
+		.social {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			h1 {
+					font-size: 1.2rem;
+					text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+				}
+			.social-icons {
+				display: flex;
+				justify-content: center;
+				margin: 25px;
+				img {
+					width: 125px;
+					margin: 0 25px;
+					border-radius: 100%;
+					box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.699);
+				}
+				
+			}
 		}
 		
 	}
@@ -166,7 +186,8 @@ a:hover {
 			font-weight: bold;
 			margin: 0 auto;
 			text-decoration: underline overline;
-		  	text-decoration-color: rgb(172, 0, 0);
+			  text-decoration-color: rgb(172, 0, 0);
+			  text-shadow: 0px 0px 10px #000000d3;
 		}
 	}
 	}
@@ -177,7 +198,7 @@ a:hover {
 		position: relative;
 		color:white;
 		background-color: rgb(22, 22, 22);
-		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.849);
 		padding: 50px 300px;
 		line-height: 1.6;
 		
@@ -187,7 +208,7 @@ a:hover {
 		}
 		a {
 			color: rgb(255, 255, 255);
-			border-bottom: 4px solid rgb(172, 0, 0);
+			
 		}
 
 		.videos-container {
@@ -221,6 +242,7 @@ a:hover {
 		  margin: 0 auto;
 		  text-decoration: underline overline;
 		  text-decoration-color: rgb(172, 0, 0);
+		  text-shadow: 0px 0px 10px #000000d3;
   		}
 	}
 }
@@ -233,6 +255,6 @@ a:hover {
 		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
 		padding: 50px 300px;
 		line-height: 1.6;
-		height: 300px;
+		
 		
 }
