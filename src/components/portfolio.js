@@ -5,8 +5,8 @@ function Portfolio() {
 
     return (
 
-<div className='portfolio-container'>
-            <div id='photography' className='portfolio-image'>
+<div id='photography' className='portfolio-container'>
+            <div className='portfolio-image'>
                 <div className='portfolio-header'>
                 <h1>PHOTOGRAPHY</h1>
                 </div>
