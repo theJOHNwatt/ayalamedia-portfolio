@@ -20,7 +20,7 @@ function Film() {
                 <div className='videos-container'>
                     <AliceCarousel>
                       
-                        <iframe title='vid1' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
+                        <iframe title='vid2' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
                        
                         <iframe title='vid2' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc" />
                        
