@@ -30,7 +30,7 @@ function Home () {
         allow='autoplay, muted'
       />
     </div>
-    <a href='#about' ><div className='scroll'>EXPLORE<img src={down} alt='Scroll Down'/></div></a>
+    <div className='scroll'><a className='scroll-items' href='#about' >EXPLORE<img src={down} alt='Scroll Down'/></a></div>
         </div>
     )
 }

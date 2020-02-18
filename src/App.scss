@@ -64,13 +64,21 @@ table {
 
 .scroll {
 	
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+	
 	position: relative;
 	top: -110px;
 	padding: 20px 0;
 	z-index: 2;
+	.scroll-items {
+		display: flex;
+	align-items: center;
+	flex-direction: column;
+	}
+a {
+		text-decoration: none;	
+		color: rgba(255, 255, 255, 0.418);	
+		font-weight: bold;
+	}
 
 	img {
 		width: 55px;
@@ -83,11 +91,6 @@ table {
 	transition: .5s;
 }
 
-a {
-		text-decoration: none;	
-		color: rgba(255, 255, 255, 0.418);	
-		font-weight: bold;
-	}
 
 //social media styles
 

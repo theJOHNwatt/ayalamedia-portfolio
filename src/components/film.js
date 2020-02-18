@@ -1,8 +1,8 @@
 import React from 'react'
 
-import AliceCarousel from 'react-alice-carousel';
+import Carousel from 'react-bootstrap/Carousel';
 
-import './alice-carousel/alice-carousel.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Film() {
 
 
@@ -18,17 +18,20 @@ function Film() {
                     Ayala Media sets the bar for the highest quality in video production and editing. Checkout our <a href='https://www.youtube.com/user/boomshakalaka33'>YouTube</a> page for more content.
                 </p> */}
                 <div className='videos-container'>
-                    <AliceCarousel>
-                      
+                    <Carousel>
+                    <Carousel.Item>
                         <iframe title='vid2' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
-                       
+                    </Carousel.Item>
+                    <Carousel.Item>
                         <iframe title='vid2' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/Aqztfey9Plc" />
-                       
+                    </Carousel.Item>  
+                    <Carousel.Item>
                         <iframe title='vid3' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/FDRNNt6cgqg" />
-                       
+                    </Carousel.Item>  
+                    <Carousel.Item> 
                         <iframe title='vid4' className="vid" width="100%" height="550" src="https://www.youtube.com/embed/qbFIrnYy3P0" />
-                       
-                    </AliceCarousel>
+                    </Carousel.Item>   
+                    </Carousel>
                 </div>
             </div>
 
