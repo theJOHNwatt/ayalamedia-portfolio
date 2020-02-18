@@ -13,8 +13,7 @@ function Nav({selected}) {
         
         <div className='nav-bar' >
             <nav id='navbar'>
-                <div className='logo'><img src={logo} to='https://www.google.com' alt='Ayala Media Logo'/></div>
-                    <a href='#home'>HOME</a>
+                <div className='logo'><a className='home' href='#home'><img src={logo} to='https://www.google.com' alt='Ayala Media Logo'/></a></div>
                     <a href='#about'>ABOUT</a>
                     <a href='#film'>FILM</a>
                     <a href='#photography'>PHOTOGRAPHY</a>
