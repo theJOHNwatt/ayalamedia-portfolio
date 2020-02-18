@@ -18,7 +18,8 @@ function Film() {
                     Ayala Media sets the bar for the highest quality in video production and editing. Checkout our <a href='https://www.youtube.com/user/boomshakalaka33'>YouTube</a> page for more content.
                 </p> */}
                 <div className='videos-container'>
-                    <Carousel>
+                    <Carousel interval={null} touch={true} fade={true} controls={true} wrap={true}>
+                        
                     <Carousel.Item>
                         <iframe title='vid2' className="vid" width="100%"  height="550" src="https://www.youtube.com/embed/-ZrYWZ3cWMo" />
                     </Carousel.Item>

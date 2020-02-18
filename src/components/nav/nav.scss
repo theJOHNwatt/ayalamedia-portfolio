@@ -41,6 +41,7 @@
             padding: 5px;
             
             
+            
         }
 
         .home {
@@ -58,11 +59,12 @@
 
         a:hover {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
+            border-top: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 0px;
             transition: .2s;
             }
 
-        .selected {
+        a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 3px;
         }
