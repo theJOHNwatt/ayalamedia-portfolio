@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import Lightbox from 'react-image-lightbox'
+import React from 'react'
+import { SRLWrapper } from "simple-react-lightbox";
 
 import image1 from '../assests/portfolio/image1.jpg'
 import image2 from '../assests/portfolio/image2.jpg'
@@ -14,13 +14,6 @@ import image9 from '../assests/portfolio/image9.jpg'
 
 function Portfolio() {
 
-    const [lightbox, setLightbox] = useState({
-        imagePopup: '',
-        isOpen: false
-    })
-    
-    const {imagePopup, isOpen} = lightbox
-
     return (
 
 <div id='photography' className='portfolio-container'>
@@ -30,26 +23,25 @@ function Portfolio() {
                 </div>
                 <div className='portfolio-contents'>
                     <p>Bro ipsum dolor sit amet ollie beater first tracks twister gapers. Big ring bunny slope giblets 360. Bro reverse camber cruiser frozen chicken heads. Freshies frontside OTB chowder huckfest. Shreddin taco mitt rail bowl bail death cookies misty dirt chain ring rock-ectomy back country bomb gondy. Japan air backside schwag bowl death cookies.</p>
-                    <div className='image-showcase'>
-                        {/* <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image1}`})} src={image1} alt='Showcase 1' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image2}`})} src={image2} alt='Showcase 2' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image3}`})} src={image3} alt='Showcase 3' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image4}`})} src={image4} alt='Showcase 4' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image5}`})} src={image5} alt='Showcase 5' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image6}`})} src={image6} alt='Showcase 6' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image7}`})} src={image7} alt='Showcase 7' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image8}`})} src={image8} alt='Showcase 8' />
-                        <img onClick={() => setLightbox({isOpen: true, imagePopup: `${image9}`})} src={image9} alt='Showcase 9' />
-
-                        {
-                            isOpen && (
-                                <Lightbox
-                                    mainSrc={imagePopup}
-                                    onCloseRequest={() => setLightbox({...lightbox, isOpen: false})}
-                                />
-                            )
-                        } */}
-                    </div>
+                    <SRLWrapper> 
+                        <div className='image-showcase'>
+                            <div className='row-1'>
+                                <img src={image1} alt='img1' />
+                                <img src={image2} alt='img2' />
+                                <img src={image3} alt='img3' />
+                            </div>
+                            <div className='row-2'>
+                                <img src={image4} alt='img4' />
+                                <img src={image5} alt='img5' />
+                                <img src={image6} alt='img6' />
+                            </div>
+                            <div className='row-3'>
+                                <img src={image7} alt='img7' />
+                                <img src={image8} alt='img8' />
+                                <img src={image9} alt='img9' />
+                            </div>
+                        </div>
+                    </SRLWrapper>
                 </div>
             </div>
         </div>
