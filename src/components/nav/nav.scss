@@ -1,22 +1,31 @@
 
 
 .nav-bar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.9);
+    z-index: 999999;
+    margin-top: 100px;
+    
+
     nav {
         display: flex;
-        background-color: rgba(12, 12, 12, 0.9);
+        width: 50%;
         padding: 5px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         padding: 10px;
+        margin: 0 auto;
+        height: 60px;
 
-        .logo {
-            border: 2px solid white;
-            border-radius: 100%;
-            padding: 5px;
+        .logo:hover {
+            transform: rotate(360deg);
+            transition: .5s;
         }
 
         img {
             width: 15px;  
+            margin-bottom: 5px;
         }
 
         .motofin {
@@ -30,17 +39,37 @@
             font-weight: bold;
             margin: 0 20px;
             padding: 5px;
+            
+            
+            
+        }
+
+        .home {
+            border: 2px solid white;
+            border-radius: 100%;
+            // padding: 5px;
+            
+        }
+
+        .home:hover {
+            border-bottom: none;
+            border: 2px solid rgba(172, 0, 0, 0.9);
+            box-shadow: 0px 0px 5px 1px rgba(172, 0, 0, 0.829);
         }
 
         a:hover {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
-            margin-top: 3px;
+            border-top: 3px solid rgba(172, 0, 0, 0.9);
+            margin-top: 0px;
             transition: .2s;
-        }
-        
+            }
+
         a:focus {
             border-bottom: 3px solid rgba(172, 0, 0, 0.9);
             margin-top: 3px;
         }
     }
 }
+
+
+

@@ -3,6 +3,9 @@
    License: none (public domain)
 */
 
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,6 +19,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -29,8 +33,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+	
+	
 }
 ol, ul {
 	list-style: none;
@@ -47,3 +54,270 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+p{
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+}
+
+
+
+
+
+//header video pushed off screen
+.video {
+	margin-top: -100px;
+	margin-bottom: -129px;
+}
+
+.scroll {
+	position: relative;
+	top: 30px;
+	padding: 30px 0;
+	z-index: 2;
+	.scroll-items {
+		display: flex;
+	align-items: center;
+	flex-direction: column;
+	}
+a {
+		text-decoration: none;	
+		color: rgba(255, 255, 255, 0.151);	
+		font-weight: bold;
+	}
+a:hover {
+	background-color:rgba(12, 12, 12, 0.575);
+	transition: .5s;
+	color: rgba(255, 255, 255, 0.418);
+	text-decoration: none;
+}
+
+	img {
+		width: 55px;
+		opacity: 0.5;
+	}		
+}
+
+//about me styles
+
+.about-image {
+	background-image: url('./assests/about-image.jpg');
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+
+	.about-header {
+		text-align: center;	
+		padding: 250px;
+		h1 {
+		  color: white;
+		  font-size: 5rem;
+		  font-weight: bold;
+		  margin: 0 auto;
+		  text-decoration: underline overline;
+		  text-decoration-color: rgb(172, 0, 0);
+		  text-shadow: 0px 0px 10px #000000d3;
+  		}
+	}
+}
+
+
+.about-container {
+	
+	
+	.about-contents {
+		z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(22, 22, 22);
+		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		padding: 50px 300px;
+		line-height: 1.6;
+		h1 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+		
+		.social {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			h1 {
+					font-size: 1.2rem;
+					text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.699);
+				}
+			.social-icons {
+				display: flex;
+				justify-content: center;
+				margin: 25px;
+				img {
+					width: 125px;
+					margin: 0 25px;
+					border-radius: 100%;
+					box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.699);
+				}
+				
+			}
+		}
+		
+	}
+}
+
+.film-image {
+		background-image: url('./assests/motoimage1.jpg');
+		height: 600px;
+		background-attachment: fixed;
+  		background-position: center;
+  		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 1;
+
+		  .film-header {
+			  text-align: center;	
+			  padding: 250px;
+		  h1 {
+			color: white;
+			font-size: 5rem;
+			font-weight: bold;
+			margin: 0 auto;
+			text-decoration: underline overline;
+			  text-decoration-color: rgb(172, 0, 0);
+			  text-shadow: 0px 0px 10px #000000d3;
+		}
+	}
+	}
+
+.film-container {
+	.film-contents {
+		z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(22, 22, 22);
+		box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.849);
+		padding: 50px 300px;
+		line-height: 1.6;
+		
+		p {
+			font-weight: 600;
+			text-align: center;
+		}
+		a {
+			color: rgb(255, 255, 255);
+			
+		}
+
+		.videos-container {
+			margin-top: 20px;
+
+			
+		}
+
+	}
+
+}
+
+//Photography styles 
+
+.portfolio-image {
+	background-image: url('./assests/motoimage2.jpg');
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+
+	.portfolio-header {
+		text-align: center;	
+		padding: 250px;
+		h1 {
+		  color: white;
+		  font-size: 5rem;
+		  font-weight: bold;
+		  margin: 0 auto;
+		  text-decoration: underline overline;
+		  text-decoration-color: rgb(172, 0, 0);
+		  text-shadow: 0px 0px 10px #000000d3;
+  		}
+	}
+}
+
+.portfolio-contents {
+	z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(22, 22, 22);
+		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		padding: 50px 50px;
+		line-height: 1.6;
+		
+		.image-showcase {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				width: 550px;
+				margin: 10px;
+				box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.685);
+			}
+			.hover-img {
+				background-color: rgb(172, 0, 0);
+			}
+
+			img:hover {
+				opacity: .4;
+				cursor: pointer;
+			}
+		}
+		
+}
+
+
+//MotoFinCo styles
+
+.motofin-image {
+	background-image: url('./assests/motofin-image.jpg');
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	
+
+	  .motofin-header {
+		  text-align: center;	
+		  padding: 250px;
+	  h1 {
+		color: white;
+		font-size: 5rem;
+		font-weight: bold;
+		margin: 0 auto;
+		text-decoration: underline overline;
+		  text-decoration-color: rgb(172, 0, 0);
+		  text-shadow: 0px 0px 10px #000000d3;
+	}
+}
+}
+
+.motofin-container {
+.motofin-contents {
+	z-index: 999;
+	position: relative;
+	color:white;
+	background-color: rgb(22, 22, 22);
+	box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.849);
+	padding: 50px 300px;
+	line-height: 1.6;
+	
+
+}
+
+}
+
