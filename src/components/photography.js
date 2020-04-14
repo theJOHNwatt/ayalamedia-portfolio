@@ -11,18 +11,21 @@ import image7 from '../assests/portfolio/image7.jpg'
 import image8 from '../assests/portfolio/image8.jpg'
 import image9 from '../assests/portfolio/image9.jpg'
 
+function Photography() {
 
-function Portfolio() {
+
+
 
     return (
-
-<div id='photography' className='portfolio-container'>
-            <div className='portfolio-image'>
-                <div className='portfolio-header'>
-                <h1>PHOTOGRAPHY</h1>
+        <div  className='photography-container'> 
+            <div id='photography' className='photography-image'>
+                <div className='photography-header'>
+                    <h1>PHOTOGRAPHY</h1>
                 </div>
-                <div className='portfolio-contents'>
-                    <p>Bro ipsum dolor sit amet ollie beater first tracks twister gapers. Big ring bunny slope giblets 360. Bro reverse camber cruiser frozen chicken heads. Freshies frontside OTB chowder huckfest. Shreddin taco mitt rail bowl bail death cookies misty dirt chain ring rock-ectomy back country bomb gondy. Japan air backside schwag bowl death cookies.</p>
+                
+            </div>  
+            <div className='photography-contents'>
+                    <p>Bro ipsum dolor sit amet reverse camber park rat air poaching skid lid, north shore schwag air free ride ski bum ollie frozen chicken heads. Taco DH wheelie drop smear greasy frozen chicken heads avie bomb hole gondy hurl carcass tele. Wheels bro grab back country couloir air. Shreddin ripper dope huckfest afterbang brain bucket fatty ski bum punter gaper hurl carcass flow face shots greasy cork. McTwist lid yard sale washboard shred. Free ride derailleur rail, road rash lid smear huck gorby. White room wheelie booter, air sharkbite schwag cornice first tracks air gapers freshies caballerial endo.</p>
                     <SRLWrapper> 
                         <div className='image-showcase'>
                             <div className='row-1'>
@@ -42,10 +45,10 @@ function Portfolio() {
                             </div>
                         </div>
                     </SRLWrapper>
-                </div>
             </div>
         </div>
+        
     )
 }
 
-export default Portfolio
+export default Photography
