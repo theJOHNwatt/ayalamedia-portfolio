@@ -1,5 +1,6 @@
 import React from 'react'
 
+import motofins from '../assests/motofin-image.jpg'
 
 
 function Motofin() {
@@ -14,7 +15,10 @@ function Motofin() {
                 
             </div>  
             <div className='motofin-contents'>
-                    <p>Bro ipsum dolor sit amet reverse camber park rat air poaching skid lid, north shore schwag air free ride ski bum ollie frozen chicken heads. Taco DH wheelie drop smear greasy frozen chicken heads avie bomb hole gondy hurl carcass tele. Wheels bro grab back country couloir air. Shreddin ripper dope huckfest afterbang brain bucket fatty ski bum punter gaper hurl carcass flow face shots greasy cork. McTwist lid yard sale washboard shred. Free ride derailleur rail, road rash lid smear huck gorby. White room wheelie booter, air sharkbite schwag cornice first tracks air gapers freshies caballerial endo.</p>
+                    <h1>Universal Helmet Fins</h1>
+                    <p>Devoloped by Ayala Media, our patent pending design allows the fin to bend and conform to almost any helmet. Not only is it pliable but it is also crushable allowing it to not interfere with helmet safety. We use the same 3M technology as todays top pov action cameras to make applying the fin easy while maintaining a strong bond. Add some style to your helmet and shop MotoFinco!</p>
+                    <img src={motofins} src={motofins} />
+                    <button><a href='https://www.motofinco.com' target="_blank">Explore MotoFin</a></button>
             </div>
         </div>
         
