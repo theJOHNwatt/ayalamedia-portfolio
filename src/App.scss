@@ -351,12 +351,12 @@ a:hover {
 			border: none;
 			a {
 				text-decoration: none;
-				color: white;
+				color: rgb(255, 255, 255);
 			}
 		}
 		button:hover {
-			background-color: rgba(172, 0, 0, 0.603);
-			transition: .3s;
+			opacity: .8;
+			transition: .2s;
 		}
 	}
 }
@@ -364,7 +364,7 @@ a:hover {
 //contact 
 
 .contact-image {
-	background-image: url('./assests/about-image.jpg');
+	background-image: url('./assests/motoimage5.jpg');
 	height: 600px;
 	background-attachment: fixed;
 	background-position: center;

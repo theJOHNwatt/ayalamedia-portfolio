@@ -1,5 +1,5 @@
 {
-  "name": "ayalamedia",
+  "name": "static-site-mailer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+    "emailjs": "^2.2.0",
     "react": "^16.12.0",
     "react-alice-carousel": "^1.17.3",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -19,6 +20,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "sass": "^1.25.0",
+    "serverless": "^1.67.3",
     "simple-react-lightbox": "^2.2.0"
   },
   "scripts": {
