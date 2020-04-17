@@ -72,34 +72,35 @@ class Form extends Component {
 
         return (
             <div>
-                <div className="row">
-                    <form id="myform" className="col s12" onSubmit={this.onSubmit}>
-                        <ul className="collection">
-                            <li className="collection-item">Enter User Details</li>
-                            <li className="collection-item">
-                                <div className="input-field col s6">
-                                    <p>first name</p>
-                                    <input id="firstname" type="text" className="validate" ref="firstname" required />
-                                </div>
-                                <div className="input-field col s6">
+                <div>
+                    <form onSubmit={this.onSubmit}>
+                        <div className='row1'>
+                            <div>
+                                <input id="firstname" type="text" className="validate" ref="firstname" required />
+                                <p>first name</p>
+                            </div>
+                            <div>
+                                <input id="lastname" type="text" className="validate" ref="lastname" name="lname" required />
                                 <p>last name</p>
-                                    <input id="lastname" type="text" className="validate" ref="lastname" name="lname" required />
-                                </div>
-                                <div className="input-field">
-                                <p>email name</p>
-                                    <input id="email" type="email" className="validate" ref="email" required />
-                                </div>
-                                <div className="input-field col s6">
-                                <p>phone name</p>
-                                    <input id="phone" type="text" className="validate" ref="phone" />
-                                </div>
-                                <div className="input-field col s6">
+                            </div>
+                        </div>
+                        <div className='row1'>
+                            <div>
+                                <input id="email" type="email" className="validate" ref="email" required />
+                                <p>email</p>
+                            </div>
+                            <div>
+                                <input id="phone" type="text" className="validate" ref="phone" />
+                                <p>phone number</p>
+                            </div>
+                        </div>
+                            <div className='text'>
+                                <textarea id="message" type="text" className="validate" ref="message" />
                                 <p>message</p>
-                                    <input id="message" type="text" className="validate" ref="message" />
-                                </div>
-                            </li>
-                        </ul>
-                        <input type="submit" className="btn green" value="Confrim" />
+                            </div>
+                        <div className='btn'>
+                            <input id='confirm-btn' type="submit" className="btn green" value="Send" placeholder="Send"/>
+                        </div>
                     </form>
                 </div>
             </div>
