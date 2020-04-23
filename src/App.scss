@@ -99,7 +99,7 @@ a:hover {
 	}		
 }
 
-//about me styles
+//about styles
 
 .about-image {
 	background-image: url('./assests/about-image.jpg');
@@ -221,18 +221,18 @@ a:hover {
 
 }
 
-//Photography styles 
+//photography styles 
 
-.portfolio-image {
-	background-image: url('./assests/motoimage2.jpg');
+.photography-image {
+	background-image: url('./assests/motoimage3.JPG');
 	height: 600px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: 1;
+	z-index: 2;
 
-	.portfolio-header {
+	.photography-header {
 		text-align: center;	
 		padding: 250px;
 		h1 {
@@ -247,22 +247,35 @@ a:hover {
 	}
 }
 
-.portfolio-contents {
-	z-index: 999;
+
+.photography-container {
+	
+	
+	.photography-contents {
+		z-index: 999;
 		position: relative;
 		color:white;
 		background-color: rgb(22, 22, 22);
 		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
 		padding: 50px 50px;
 		line-height: 1.6;
-		
+		h1 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
 		.image-showcase {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			align-content: center;
+
+			.row-1, .row-2, .row-3 {
+				display: flex;
+			}
 
 			img {
-				width: 550px;
+				width: 32%;
 				margin: 10px;
 				box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.685);
 			}
@@ -275,49 +288,187 @@ a:hover {
 				cursor: pointer;
 			}
 		}
-		
+	}
 }
 
-
-//MotoFinCo styles
+//motofin
 
 .motofin-image {
-	background-image: url('./assests/motofin-image.jpg');
+	background-image: url('./assests/motoimage4.JPG');
 	height: 600px;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: 1;
-	
+	z-index: 2;
 
-	  .motofin-header {
-		  text-align: center;	
-		  padding: 250px;
-	  h1 {
-		color: white;
-		font-size: 5rem;
-		font-weight: bold;
-		margin: 0 auto;
-		text-decoration: underline overline;
+	.motofin-header {
+		text-align: center;	
+		padding: 250px;
+		h1 {
+		  color: white;
+		  font-size: 5rem;
+		  font-weight: bold;
+		  margin: 0 auto;
+		  text-decoration: underline overline;
 		  text-decoration-color: rgb(172, 0, 0);
 		  text-shadow: 0px 0px 10px #000000d3;
+  		}
 	}
 }
-}
+
 
 .motofin-container {
-.motofin-contents {
-	z-index: 999;
-	position: relative;
-	color:white;
-	background-color: rgb(22, 22, 22);
-	box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.849);
-	padding: 50px 300px;
-	line-height: 1.6;
 	
-
+	
+	.motofin-contents {
+		z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(22, 22, 22);
+		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		padding: 50px 300px;
+		line-height: 1.6;
+		text-align: center;
+		h1 {
+			font-size: 1.5rem;
+		
+		}
+		img {
+			width: 90%;
+		}
+		
+		button {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+			width: 20%;
+			font-size: 1.4rem;
+			
+			background-color: rgb(172, 0, 0);
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			a {
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+			}
+		}
+		button:hover {
+			opacity: .8;
+			transition: .2s;
+		}
+	}
 }
 
+//contact 
+
+.contact-image {
+	background-image: url('./assests/motoimage5.jpg');
+	height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 2;
+
+	.contact-header {
+		text-align: center;	
+		padding: 250px;
+		h1 {
+			color: white;
+			font-size: 5rem;
+			font-weight: bold;
+			margin: 0 auto;
+			text-decoration: underline overline;
+			text-decoration-color: rgb(172, 0, 0);
+			text-shadow: 0px 0px 10px #000000d3;
+		}
+	}
 }
+
+
+.contact-container {
+	
+	
+	.contact-contents {
+		z-index: 999;
+		position: relative;
+		color:white;
+		background-color: rgb(22, 22, 22);
+		box-shadow: 0px 0px 18px 1px rgb(0, 0, 0);
+		padding: 50px 300px;
+		line-height: 1.6;
+		h1 {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+	}
+}
+
+//form styles
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	.row1{
+		display: flex;
+		justify-content: space-around;
+		width: 40%;
+	}
+
+	#firstname, #lastname, #email, #phone {
+		border-radius: 10px;
+		background-color: rgb(49, 49, 49);
+		box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.404);
+		border: 1px solid rgba(39, 39, 39, 0.74);
+		padding: 5px;
+		font-weight: bold;
+		color: white;
+	}
+	.text {
+		width: 37%;
+		
+
+		textarea {
+			border-radius: 10px;
+			background-color: rgb(49, 49, 49);
+			box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.404);
+			border: 1px solid rgba(39, 39, 39, 0.74);
+			padding: 5px;
+			font-weight: bold;
+			color: white;
+			width: 100%;
+			height: 100px;
+		}
+	}
+
+	.btn {
+		
+		width: 30%;
+	}
+
+	#confirm-btn {
+		display: block;
+		margin: 0 auto;
+		
+		width: 100%;
+		font-size: 1.4rem;
+		color:white;
+		background-color: rgb(172, 0, 0);
+		padding: 10px;
+		border-radius: 10px;
+		border: none;
+	}
+	#confirm-btn:hover {
+		opacity: .8;
+		transition: .2s;
+	}
+}
+
+
+
 
